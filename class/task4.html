@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+     body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            flex-direction: column;
+        }
+        .button-container {
+            margin-top: 20px;
+            display: flex;
+            gap: 10px;
+        }
+</style>
+<body>
+    <h1>Howz the mood</h1>
+    <img src="image1.png" width="200px">
+    <div class="button-container">
+        <button id="happy">Happy</button>
+        <button id="sad">Sad</button>
+    </div>
+</body>
+<script>
+    const imge = document.querySelector("img");
+    const bt1 = document.querySelector("#happy");
+    const bt2 = document.querySelector("#sad");
+    bt1.addEventListener("click", function () {
+        imge.src = "image1.png";
+    })
+    bt2.addEventListener("click", function () {
+        imge.src = "image.png";
+    })
+</script>
+
+</html>

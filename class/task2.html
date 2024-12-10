@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <h2 id="myh">Change  my color to blue</h2>
+    <button>click</button>
+</body>
+<script>
+  const h=document.getElementById("myh");
+  const bt=document.querySelector("button");
+  bt.addEventListener("click",function col(){
+    h.style.color="blue";
+  });
+//   const age =20;
+const age= prompt("enter the age");
+if(age<18){
+    console.log("you cannot vote");
+}else{
+    console.log("you can vote");
+}
+  
+</script>
+</html>

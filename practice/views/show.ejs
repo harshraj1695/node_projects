@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title><%= filename %></title>
+</head>
+
+<body class="bg-zinc-900 text-white flex items-center justify-center min-h-screen">
+    <div class="text-center bg-zinc-800 p-8 rounded-md shadow-lg max-w-3xl w-full">
+        <!-- File Name -->
+        <h1 class="text-4xl font-bold tracking-tight mb-4">
+            <%= filename %>
+        </h1>
+        
+        <!-- File Data -->
+        <div class="p-6 bg-zinc-700 rounded-md mb-6">
+            <p class="text-lg pr-15 font-light leading-relaxed whitespace-pre-wrap">
+                <%= filedata %>
+            </p>
+        </div>
+        
+        <!-- Go Back Home Link -->
+        <a class="text-blue-500 hover:text-blue-300 text-lg" href="/">Go Back Home</a>
+    </div>
+</body>
+
+</html>
